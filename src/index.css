@@ -51,7 +51,7 @@ h1, h2, h3 {
 
 /*sections headings class*/
 .section-headings{
-  padding: 10% 6%;
+  padding: 10% 6% ;
 }
 
 .section-headings header{
@@ -87,6 +87,7 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 20% 20%;
   }
 
   .banner .me{
@@ -97,6 +98,7 @@ h1, h2, h3 {
   .about-me{
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 
   .about-me img{
@@ -107,6 +109,7 @@ h1, h2, h3 {
   .qualification-div{
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .qualification{
@@ -141,8 +144,78 @@ h1, h2, h3 {
     width: 100%;
   }
 
-  .footer-container {
-    grid-template-columns: 1fr;
+
+}
+
+
+@media screen and (max-width: 800px) {
+  .navbar ul{
+    display: none;
+  }
+  .navbar-hamburger{
+    display: block;
+  }
+
+  .banner{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20% 20%;
+  }
+
+  .banner .me{
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .about-me{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-me img{
+    width: 100%;
+    height: auto;
+  }
+
+  .qualification-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .qualification{
+    width: 100%;
+  }
+
+  .experience-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience-container{
+    width: 100%;
     text-align: center;
   }
+
+  .service-details-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-section .text-message{
+    display: none;
+  }
+
+  .contact-section .form{
+    width: 100%;
+  }
+
+
 }
