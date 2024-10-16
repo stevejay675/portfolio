@@ -29,7 +29,7 @@ body {
   background-color: #121212;
   color: var(--txt);
   scroll-behavior: smooth;
-
+   overflow-x: hidden;
 }
 
 a{
@@ -51,14 +51,14 @@ h1, h2, h3 {
 
 /*sections headings class*/
 .section-headings{
-  padding: 10% 6% ;
+  padding: 10% 6%;
 }
 
 .section-headings header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 
@@ -81,6 +81,15 @@ h1, h2, h3 {
   }
   .navbar-hamburger{
     display: block;
+  }
+
+  .right-container-visible a{
+    text-decoration: none;
+    padding: 8px 7px;
+    border-radius: 20px;
+    background-color: var(--highlight);
+    color: white;
+    font-size: 12px;
   }
 
   .banner{
@@ -129,6 +138,7 @@ h1, h2, h3 {
   .service-details-container{
     display: flex;
     flex-direction: column;
+    
   }
 
   .contact-section{

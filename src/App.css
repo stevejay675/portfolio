@@ -59,7 +59,7 @@
 }
 
 .right-container-visible i .icon{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--txt);
   cursor: pointer;
 }
@@ -68,7 +68,7 @@
   color: var(--txt-sec);
 }
 
-.right-container-visible a{
+.right-container-visible .download-cv{
   text-decoration: none;
   padding: 8px 7px;
   border-radius: 20px;
@@ -78,7 +78,7 @@
 
 
 
-.right-container-visible a:hover{
+.right-container-visible .download-cv:hover{
   background-color: var(--lowlight);
 }
 
@@ -109,7 +109,26 @@
 
 .navbar  ul li:hover::before{
   width: 100%;
+ 
 }
+
+.navbar-hamburger {
+  cursor: pointer;
+  padding: 3px;
+  border: 1px solid transparent;
+}
+
+.navbar-hamburger:active{
+  border: 1px solid var(--txt);
+}
+
+.navbar-hamburger .icon{
+  width: 20px;
+  height: 20px;
+  color: var(--txt-bold);
+}
+
+
 
 /*Banner*/
 .banner{
@@ -325,9 +344,9 @@
 
 /* Project Card */
 .project-detail-container {
-  border: 1px solid var(--txt);
   padding: 40px 20px;
   border-radius: 20px;
+  background-color: var(--bg-dark);
 }
 
 
@@ -403,6 +422,9 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  background-color: var(--bg-darker);
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .service-det i{
@@ -610,8 +632,8 @@
   top: 0;
   right: -100%;
   height: 100%;
-  width: 250px;
-  background-color: var(--primary);
+  width: 60%;
+  background-color: var(--highlight);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -630,8 +652,7 @@
 }
 
 .sidebar-content a {
-  color: var(--text-color);
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
 }
 
@@ -645,7 +666,7 @@
   top: 10px;
   right: 15px;
   font-size: 24px;
-  color: var(--text-color);
+  color: var(--txt-bold);
   cursor: pointer;
 }
 
@@ -656,7 +677,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1000; /* Behind sidebar */
   opacity: 0;
   visibility: hidden;

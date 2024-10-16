@@ -1,31 +1,40 @@
-import React from 'react'
-import { MdContactSupport  } from "react-icons/md";
+import React, { useEffect } from 'react';
+import { MdContactSupport } from "react-icons/md";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Duration for the animations
+      easing: 'ease-in-out', // Easing function for a smooth transition
+    });
+  }, []);
+
   return (
     <section className='contact section-headings' id='contact'>
-      <header>
-      <span>Get in touch</span>
-      <h1 className='bold'>With Me</h1>
+      <header data-aos="fade-up">
+        <span>Get in touch</span>
+        <h1 className='bold'>With Me</h1>
       </header>
 
       <div className="contact-section">
-        <div className="text-message">
-            <h1>We had happy to hear  from you</h1>
+        <div className="text-message" data-aos="fade-up">
+          <h1>We are happy to hear from you</h1>
         </div>
 
-        <form action="" className="form">
-                <i><MdContactSupport className='icon'/></i>
-                <input type="text" placeholder='Name'/>
+        <form action="" className="form" data-aos="fade-up">
+          <i><MdContactSupport className='icon'/></i>
+          <input type="text" placeholder='Name' required />
 
-                <input type="Email" placeholder='Email'/>
+          <input type="email" placeholder='Email' required />
 
-                <textarea name="" id="" placeholder='your message' resize></textarea>
-            <button className="send">Send</button>
+          <textarea placeholder='Your message' required></textarea>
+          <button type="submit" className="send">Send</button>
         </form>
       </div>
     </section>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

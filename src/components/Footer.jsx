@@ -13,9 +13,10 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#service">Services</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#experience">Experience</a></li>
           </ul>
         </div>
 
@@ -23,7 +24,7 @@ const Footer = () => {
           <h4>Follow Me</h4>
           <ul>
             <li><a href="https://www.linkedin.com"><FaLinkedin /> LinkedIn</a></li>
-            <li><a href="https://github.com"><FaGithub /> GitHub</a></li>
+            <li><a href="https://github.com/stevejay675"><FaGithub /> GitHub</a></li>
             <li><a href="https://twitter.com"><FaTwitter /> Twitter</a></li>
           </ul>
         </div>

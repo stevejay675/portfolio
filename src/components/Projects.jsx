@@ -1,18 +1,29 @@
-import React from "react";
+import {React, useEffect} from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules"; // Updated import path for modules
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 import p1 from "../assets/p1.jpg";
 import p2 from "../assets/p2.webp";
 import p3 from "../assets/p3.webp";
 
 const Projects = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,  // Smooth animation duration
+      easing: 'ease-in-out', // Smooth easing for animations
+    });
+  }, []);
+
+
   return (
     <section className="projects section-headings" id="project">
-      <header>
+      <header data-aos="fade-up">
         <span>Browse my Recent</span>
         <h1 className="bold">Projects</h1>
       </header>

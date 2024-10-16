@@ -1,12 +1,13 @@
 import React from 'react';
 import { FaCode, FaMoon, FaSun, FaBars } from "react-icons/fa";
 import { useState, useEffect } from 'react';
-
+import Sidebar from './Sidebar';
 
 
 const Navbar = () => {
 
   const [position, setPosition] = useState('absolute');
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +25,10 @@ const Navbar = () => {
     };
   }, []);
 
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
 
   return (
     <div className={`navbar ${[position]}`}>
@@ -40,10 +45,12 @@ const Navbar = () => {
 
       <div className='right-container-visible'>
         <i><FaSun className='icon'/></i>
-        <a href="" download>Download CV</a>
-        <div className="navbar-hamburger" >
-                <FaBars />
+        <a href="" download className='download-cv'>Download CV</a>
+        <div className="navbar-hamburger" onClick={toggleSidebar}>
+                <FaBars className='icon'/>
         </div>
+
+        <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       </div>
     </div>
   )
