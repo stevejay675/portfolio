@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCode, FaMoon, FaSun } from "react-icons/fa";
+import { FaCode, FaMoon, FaSun, FaBars } from "react-icons/fa";
 
 
 const Navbar = () => {
@@ -19,6 +19,9 @@ const Navbar = () => {
       <div className='right-container-visible'>
         <i><FaSun className='icon'/></i>
         <a href="" download>Download CV</a>
+        <div className="navbar-hamburger" >
+                <FaBars />
+        </div>
       </div>
     </div>
   )

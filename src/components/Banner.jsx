@@ -15,7 +15,7 @@ const Banner = () => {
         <h3 className='bold'>Frontend Developer</h3>
         <div className='download'>
             <a href='#service' className='cv-btn'>services</a>
-            <a href='' className='contact-info-btn'>Contact Info</a>
+            <a href='' download className='contact-info-btn'>Download CV</a>
         </div>
 
         <div className='links'>
