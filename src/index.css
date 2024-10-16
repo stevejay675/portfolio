@@ -1,0 +1,145 @@
+:root {
+ 
+  --bg-dark: #121212;
+  --bg-darker: #1E1E1E;
+  --bg-light: #2C2C2C;
+  --bg-contrast: #E0E0E0;
+  --footer-bg: hsl(0, 0%, 5%);
+
+  --txt-bold: #fff;
+  --txt: #A5A5A5;
+  --txt-sec: hsl(0, 0%, 55%);
+
+  --highlight: #007aff;
+  --lowlight: hsl(211, 100%, 55%);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .4s;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: var(--txt);
+  scroll-behavior: smooth;
+
+}
+
+a{
+  text-decoration: none;
+  color: var(--dark-bg);
+  cursor: pointer;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+
+
+.bold{
+  color: var(--txt-bold);
+  font-weight: 600;
+}
+
+/*sections headings class*/
+.section-headings{
+  padding: 10% 6%;
+}
+
+.section-headings header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+
+.section-headings header span {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.section-headings header h1 {
+  font-size: 3rem;
+}
+
+.special-text{
+  color: var(--highlight);
+}
+
+@media screen and (max-width: 600px) {
+  .navbar ul{
+    display: none;
+  }
+
+  .banner{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .banner .me{
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .about-me{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me img{
+    width: 100%;
+    height: auto;
+  }
+
+  .qualification-div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .qualification{
+    width: 100%;
+  }
+
+  .experience-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience-container{
+    width: 100%;
+    text-align: center;
+  }
+
+  .service-details-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-section .text-message{
+    display: none;
+  }
+
+  .contact-section .form{
+    width: 100%;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
