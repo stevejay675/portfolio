@@ -29,6 +29,8 @@ const Footer = () => {
           </ul>
         </div>
 
+        
+
         <div className="footer-contact">
           <h4>Contact Info</h4>
           <p><FaEnvelope /> <a href="mailto:stevejay675@email.com">stevejay675@email.com</a></p>

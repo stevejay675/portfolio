@@ -8,7 +8,21 @@ const Navbar = () => {
 
   const [position, setPosition] = useState('absolute');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [darkIcon, setDarkicon] = useState(false)
+  const [lightIcon, setLightIcon] = useState(true)
 
+//toggle switch icon
+const  toggleDarkIcon = () =>{
+  setDarkicon(false)
+  setLightIcon(true);
+}
+
+const toggleLightIcon = () =>{
+  setLightIcon(false);
+  setDarkicon(true)
+}
+
+//sticky nav on  scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 150) {
@@ -34,7 +48,7 @@ const Navbar = () => {
     <div className={`navbar ${[position]}`}>
       <a href='#' className="logo">
       <h2 className='bold'>Steve </h2>
-      <span><FaCode className='icon'/></span>
+      <span><FaCode className='code-icon'/></span>
       </a>
       <ul> 
         <a href="#about"><li className='bold'>About</li></a>
@@ -44,7 +58,8 @@ const Navbar = () => {
       </ul>
 
       <div className='right-container-visible'>
-        <i><FaSun className='icon'/></i>
+        <i><FaSun className={`${lightIcon ? 'light-icon' : `no-icon`}`} onClick={toggleLightIcon}/></i>
+        <i><FaMoon className={`${darkIcon ? 'dark-icon' : `no-icon`}`} onClick={toggleDarkIcon}/></i>
         <a href="" download className='download-cv'>Download CV</a>
         <div className="navbar-hamburger" onClick={toggleSidebar}>
                 <FaBars className='icon'/>

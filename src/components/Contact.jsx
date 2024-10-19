@@ -23,7 +23,7 @@ const Contact = () => {
           <h1>We are happy to hear from you</h1>
         </div>
 
-        <form action="" className="form" data-aos="fade-up">
+        <form action="" className="form" data-aos="zoom-in">
           <i><MdContactSupport className='icon'/></i>
           <input type="text" placeholder='Name' required />
 

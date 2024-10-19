@@ -1,5 +1,7 @@
 import React from 'react';
-import {FaTimes} from 'react-icons/fa'
+import {FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTimes} from 'react-icons/fa';
+import { TiSocialLinkedinCircular } from "react-icons/ti";
+
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
@@ -12,12 +14,23 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         <div className="sidebar-close" onClick={toggleSidebar}>
           <FaTimes />
         </div>
+
         <div className="sidebar-content">
-          <a href='/' onClick={toggleSidebar}>Home</a>
-          <a href="#about" onClick={toggleSidebar}>About</a>
-          <a href="#service" onClick={toggleSidebar}>Services</a>
-          <a href="#contact" onClick={toggleSidebar}>Contact</a>
-          <a href="#project" onClick={toggleSidebar}>Projects</a>
+          <a href='/' onClick={toggleSidebar} className='sidebar-links'>Home</a>
+          <a href="#about" onClick={toggleSidebar} className='sidebar-links'>About</a>
+          <a href="#service" onClick={toggleSidebar} className='sidebar-links'>Services</a>
+          <a href="#contact" onClick={toggleSidebar} className='sidebar-links'>Contact</a>
+          <a href="#project" onClick={toggleSidebar} className='sidebar-links'>Projects</a>
+
+          <div>
+            <h2 className='connect'>connect with me: </h2>
+          <div className="sidebar-socials">
+            <FaGithub className='ss'/>
+            <FaLinkedin className='ss'/>
+            <FaFacebook className='ss'/>
+            <FaInstagram className='ss'/>
+          </div>
+          </div>
         </div>
       </div>
     </div>

@@ -25,13 +25,11 @@ const About = () => {
           src={Me2} 
           alt="aboutme" 
           className='me' 
-          data-aos="fade-right" 
+          data-aos="zoom-in" 
         />
         
         <div 
           className='qualification-section' 
-          data-aos="fade-left" 
-          data-aos-delay="200"
         >
           <div className='qualification-div'>
             <div className="qualification" data-aos="zoom-in" data-aos-delay="500">
@@ -49,7 +47,7 @@ const About = () => {
             </div>
           </div>
 
-          <p data-aos="fade-up" data-aos-delay="800">
+          <p data-aos="zoom-in" data-aos-delay="500">
             I am a junior <span>software engineer</span> with a passion for developing dynamic and engaging web applications. 
             My skills focus on front-end technologies like HTML, CSS, JavaScript, React, and Next.js, allowing me to create intuitive, 
             responsive, and user-friendly interfaces. I’m committed to learning and growing, with plans to dive into backend development 
