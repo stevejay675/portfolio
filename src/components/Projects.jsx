@@ -48,7 +48,7 @@ const Projects = () => {
         <SwiperSlide>
           <div className="project-detail-container">
             <img src={p1} alt="project1" />
-            <h3>Project One</h3>
+            <h3>Ecommence Store</h3>
             <div className="buttons">
               <a href="#">GitHub</a>
               <a href="#">Live Demo</a>
@@ -59,7 +59,7 @@ const Projects = () => {
         <SwiperSlide>
           <div className="project-detail-container">
             <img src={p2} alt="project2" />
-            <h3>Project Two</h3>
+            <h3>Chat  App</h3>
             <div className="buttons">
               <a href="#">GitHub</a>
               <a href="#">Live Demo</a>
@@ -70,7 +70,7 @@ const Projects = () => {
         <SwiperSlide>
           <div className="project-detail-container">
             <img src={p3} alt="project3" />
-            <h3>Project Three</h3>
+            <h3>Restaurant Website</h3>
             <div className="buttons">
               <a href="#">GitHub</a>
               <a href="#">Live Demo</a>

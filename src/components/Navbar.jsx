@@ -1,28 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaCode, FaMoon, FaSun, FaBars } from "react-icons/fa";
-import { useState, useEffect } from 'react';
 import Sidebar from './Sidebar';
-
+import cv from '../assets/cv.pdf';
 
 const Navbar = () => {
-
   const [position, setPosition] = useState('absolute');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [darkIcon, setDarkicon] = useState(false)
-  const [lightIcon, setLightIcon] = useState(true)
+  const [theme, setTheme] = useState('dark');
 
-//toggle switch icon
-const  toggleDarkIcon = () =>{
-  setDarkicon(false)
-  setLightIcon(true);
-}
+  // Initialize theme based on saved preference or default to dark
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    setTheme(savedTheme);
+    document.body.classList.toggle('light-mode', savedTheme === 'light');
+  }, []);
 
-const toggleLightIcon = () =>{
-  setLightIcon(false);
-  setDarkicon(true)
-}
+  // Toggle between light and dark mode
+  const toggleTheme = () => {
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+    document.body.classList.toggle('light-mode', newTheme === 'light');
+    localStorage.setItem('theme', newTheme);
+  };
 
-//sticky nav on  scroll
+  // Sticky Navbar on scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 150) {
@@ -31,26 +32,21 @@ const toggleLightIcon = () =>{
         setPosition('absolute');
       }
     };
-
     window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
-
   return (
-    <div className={`navbar ${[position]}`}>
+    <div className={`navbar ${position}`}>
       <a href='#' className="logo">
-      <h2 className='bold'>Steve </h2>
-      <span><FaCode className='code-icon'/></span>
+        <h2 className='bold'>Steve</h2>
+        <span><FaCode className='code-icon'/></span>
       </a>
-      <ul> 
+      <ul>
         <a href="#about"><li className='bold'>About</li></a>
         <a href="#experience"><li className='bold'>Experience</li></a>
         <a href="#project"><li className='bold'>Project</li></a>
@@ -58,17 +54,19 @@ const toggleLightIcon = () =>{
       </ul>
 
       <div className='right-container-visible'>
-        <i><FaSun className={`${lightIcon ? 'light-icon' : `no-icon`}`} onClick={toggleLightIcon}/></i>
-        <i><FaMoon className={`${darkIcon ? 'dark-icon' : `no-icon`}`} onClick={toggleDarkIcon}/></i>
-        <a href="" download className='download-cv'>Download CV</a>
+        {theme === 'light' ? (
+          <FaSun className="light-icon" onClick={toggleTheme} />
+        ) : (
+          <FaMoon className="dark-icon" onClick={toggleTheme} />
+        )}
+        <a href={cv} download className='download-cv'>Download CV</a>
         <div className="navbar-hamburger" onClick={toggleSidebar}>
-                <FaBars className='icon'/>
+          <FaBars className='icon'/>
         </div>
-
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
