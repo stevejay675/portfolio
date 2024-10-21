@@ -12,6 +12,8 @@
 
   --highlight: #007aff;
   --lowlight: hsl(211, 100%, 55%);
+
+  --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4)
 }
 
 .light-mode{
@@ -27,6 +29,7 @@
   --highlight: #007aff;
   --lowlight: hsl(211, 100%, 55%);
 
+  --box-shadow: 0 4px 6px rgba(255, 255, 255, 0.4);
 }
 
 
