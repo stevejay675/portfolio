@@ -275,6 +275,15 @@
   gap: 10px;
 }
 
+.lets-talk{
+  background-color: var(--highlight);
+  color: #fff;
+  text-align: center;
+  padding: 6px 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: fit-content;
+}
 
 
 .qualification .badge{
@@ -378,7 +387,10 @@
   padding: 40px 20px;
   border-radius: 20px;
   background-color: var(--bg-dark);
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 
@@ -395,6 +407,12 @@
   font-size: 1.5rem;
   margin-bottom: 15px;
   text-align: center;
+}
+
+.project-detail-container i{
+  color: var(--txt-bold);
+  opacity: .4;
+  font-size: .8rem;
 }
 
 .buttons {

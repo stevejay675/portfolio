@@ -49,9 +49,10 @@ const Projects = () => {
           <div className="project-detail-container">
             <img src={p1} alt="project1" />
             <h3>Ecommence Store</h3>
+            <i>HTML, CSS, JS</i>
             <div className="buttons">
-              <a href="#">GitHub</a>
-              <a href="#">Live Demo</a>
+              <a href="https://github.com/stevejay675/accessory_store.git" target="_blank">GitHub</a>
+              <a href="https://accessory-store-six.vercel.app/" target="_blank">Live Demo</a>
             </div>
           </div>
         </SwiperSlide>
@@ -59,10 +60,11 @@ const Projects = () => {
         <SwiperSlide>
           <div className="project-detail-container">
             <img src={p2} alt="project2" />
-            <h3>Chat  App</h3>
+            <h3>Food Delivery Homepage</h3>
+            <i>NextJs</i>
             <div className="buttons">
-              <a href="#">GitHub</a>
-              <a href="#">Live Demo</a>
+              <a href="https://github.com/stevejay675/lead_web_frontend/" target="_blank">GitHub</a>
+              <a href="https://lead-web-frontend.vercel.app/" target="_blank">Live Demo</a>
             </div>
           </div>
         </SwiperSlide>
@@ -71,6 +73,7 @@ const Projects = () => {
           <div className="project-detail-container">
             <img src={p3} alt="project3" />
             <h3>Restaurant Website</h3>
+            <i>React</i>
             <div className="buttons">
               <a href="#">GitHub</a>
               <a href="#">Live Demo</a>
@@ -82,6 +85,7 @@ const Projects = () => {
           <div className="project-detail-container">
             <img src={p1} alt="project4" />
             <h3>Project Four</h3>
+            <i>javascript</i>
             <div className="buttons">
               <a href="#">GitHub</a>
               <a href="#">Live Demo</a>

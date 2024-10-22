@@ -12,6 +12,7 @@
 
   --highlight: #007aff;
   --lowlight: hsl(211, 100%, 55%);
+  --very-lowlight: hsl(211, 100%, 65%);
 
   --box-shadow: 0px 0 6px rgba(255, 255, 255, 0.1)
 }
