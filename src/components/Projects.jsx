@@ -7,8 +7,8 @@ import { Navigation, Pagination } from "swiper/modules"; // Updated import path 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
-import p1 from "../assets/p1.jpg";
-import p2 from "../assets/p2.webp";
+import p1 from "../assets/project1.jpg";
+import p2 from "../assets/project2.jpg";
 import p3 from "../assets/p3.webp";
 
 const Projects = () => {
@@ -60,7 +60,7 @@ const Projects = () => {
         <SwiperSlide>
           <div className="project-detail-container">
             <img src={p2} alt="project2" />
-            <h3>Food Delivery Homepage</h3>
+            <h3>Food Delivery</h3>
             <i>NextJs</i>
             <div className="buttons">
               <a href="https://github.com/stevejay675/lead_web_frontend/" target="_blank">GitHub</a>
@@ -84,8 +84,8 @@ const Projects = () => {
         <SwiperSlide>
           <div className="project-detail-container">
             <img src={p1} alt="project4" />
-            <h3>Project Four</h3>
-            <i>javascript</i>
+            <h3>Lost Image Matching App</h3>
+            <i>React Native</i>
             <div className="buttons">
               <a href="#">GitHub</a>
               <a href="#">Live Demo</a>

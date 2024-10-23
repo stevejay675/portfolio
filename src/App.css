@@ -565,9 +565,9 @@
 }
 
 .form textarea::placeholder{
-  color: var(--txt-bold); 
+  color: var(--txt); 
   font-style: italic;
-  opacity: .7;
+  opacity: .4;
  
   caret-color: var(--highlight);
 }
@@ -575,7 +575,7 @@
 .form input::placeholder{
   color: var(--txt-bold); 
   font-style: italic;
-  opacity: .7; 
+  opacity: .4; 
 }
 
 .form button{
