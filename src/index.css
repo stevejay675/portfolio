@@ -6,6 +6,7 @@
   --bg-darker: hsl(0, 0%, 13%);
   --bg-light: #2C2C2C;
   --bg-contrast: #E0E0E0;
+  --main-body-bg: #0000;
   --footer-bg: hsl(0, 0%, 5%);
 
   --txt-bold: #fff;
@@ -25,6 +26,7 @@
   --bg-light: #FFFFFF;
   --bg-contrast: #2C2C2C;
   --footer-bg: hsl(0, 0%, 85%);
+  --main-body-bg: #fff;
 
   --txt-bold: #121212;
   --txt: #4B4B4B;
@@ -33,6 +35,12 @@
   --lowlight: hsl(211, 100%, 55%);
 
   --box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.comp {
+  margin: 0 auto;
+  max-width: 1440px;
+  background: var(--bg-dark)
 }
 
 
@@ -55,12 +63,14 @@ html{
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: var(--bg-dark);
   color: var(--txt);
   scroll-behavior: smooth;
    overflow-x: hidden;
    font-family: 'Poppins', sans-serif;
+   background-color: var(--main-body-bg);
 }
+
+
 
 a{
   text-decoration: none;

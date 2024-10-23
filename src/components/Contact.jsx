@@ -20,7 +20,7 @@ const Contact = () => {
 
       <div className="contact-section">
         <div className="text-message" data-aos="fade-up">
-          <h1>We are happy to hear from you</h1>
+          <h1>I'm happy to hear from you</h1>
         </div>
 
         <form action="" className="form" data-aos="zoom-in">

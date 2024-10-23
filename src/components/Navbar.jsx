@@ -40,7 +40,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`navbar ${position}`}>
+    <div className={`navbar ${position} comp`}>
       <a href='#' className="logo">
         <h2 className='bold'>Steve</h2>
         <span><FaCode className='code-icon'/></span>

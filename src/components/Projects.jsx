@@ -75,7 +75,7 @@ const Projects = () => {
             <h3>Lost Image Matching App</h3>
             <i>React Native, Expo</i>
             <div className="buttons">
-              <a href="#">GitHub</a>
+              <a href="https://github.com/stevejay675/lostImageMatchingApp">GitHub</a>
               <a href="#">Live Demo</a>
             </div>
           </div>
