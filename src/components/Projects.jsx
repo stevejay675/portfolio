@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 
 import p1 from "../assets/project1.jpg";
 import p2 from "../assets/project2.jpg";
-import p3 from "../assets/p3.webp";
+import p3 from "../assets/project3.jpg";
 
 const Projects = () => {
 
@@ -72,8 +72,8 @@ const Projects = () => {
         <SwiperSlide>
           <div className="project-detail-container">
             <img src={p3} alt="project3" />
-            <h3>Restaurant Website</h3>
-            <i>React</i>
+            <h3>Lost Image Matching App</h3>
+            <i>React Native, Expo</i>
             <div className="buttons">
               <a href="#">GitHub</a>
               <a href="#">Live Demo</a>
@@ -84,8 +84,8 @@ const Projects = () => {
         <SwiperSlide>
           <div className="project-detail-container">
             <img src={p1} alt="project4" />
-            <h3>Lost Image Matching App</h3>
-            <i>React Native</i>
+            <h3>Restaurant Website</h3>
+            <i>NextJs</i>
             <div className="buttons">
               <a href="#">GitHub</a>
               <a href="#">Live Demo</a>
