@@ -12,10 +12,9 @@
   align-items: center;
   background-color: transparent;
   box-sizing: border-box;
-  position: absolute;
+  position: static;
   z-index: 20;
   width: 100%;
-  background-color: var(--bg-dark);
 }
 
 .navbar.fixed {
@@ -29,9 +28,10 @@
 }
 
 .navbar.absolute {
-  position: absolute;
+  position: static;
   background-color: transparent;
   width: 100%;
+  top: 0;
 } 
 
 
@@ -732,7 +732,6 @@
 
 .ss{
   font-size: 1.3rem;
-  color: var(--highlight);
 }
 
 

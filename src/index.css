@@ -38,9 +38,10 @@
 }
 
 .comp {
-  margin: 0 auto;
   max-width: 1440px;
-  background: var(--bg-dark)
+  background: var(--bg-dark);
+  width: 100%;
+  margin: 0 auto;
 }
 
 
@@ -54,11 +55,11 @@
 
 html{
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  
 }
 
-::-webkit-scrollbar{
-  display:none
-}  
 
 
 body {
@@ -67,7 +68,8 @@ body {
   scroll-behavior: smooth;
    overflow-x: hidden;
    font-family: 'Poppins', sans-serif;
-   background-color: var(--main-body-bg);
+   background-color: inherit;
+   position: relative;
 }
 
 
