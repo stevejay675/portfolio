@@ -104,7 +104,7 @@ const Experience = () => {
             <div className="exp-sub-container" data-aos="zoom-in" data-aos-delay="600">
               <i><FaCheckCircle className='bold'/></i>
               <section className="name">
-                <h3 className='bold'>HTML</h3>
+                <h3 className='bold'>Fire Base</h3>
                 <span>Experienced</span>
               </section>
             </div>
