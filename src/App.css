@@ -144,11 +144,18 @@
 }
 
 .light-icon, .dark-icon{
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+
+  border-radius: 50%;
   color: var(--txt-bold);
   display: block;
   cursor: pointer;
+}
+
+.light-icon:hover, .dark-icon:hover{
+  background: var(--bg-darker);
 }
 
 .no-icon{
@@ -308,7 +315,7 @@
 
 
 .experience-container{
-  box-shadow: var( --box-shadow);
+  background-color: var(--bg-darker);
   padding: 30px 50px;
   width: 50%;
   border-radius: 20px;
@@ -366,22 +373,13 @@
 .projects{
   background-color: var(--bg-darker);
 }
-.project-container {
-  width: 100%;
-  overflow: hidden;
-}
+
 
 .swiper {
   padding: 20px 0;
   position: relative;
-  
 }
 
-.swiper-slide {
-  display: flex;
-  justify-content: center;
- 
-}
 
 /* Project Card */
 .project-detail-container {

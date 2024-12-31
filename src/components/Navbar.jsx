@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaCode, FaMoon, FaSun, FaBars } from "react-icons/fa";
 import Sidebar from './Sidebar';
-import cv from '../assets/cv.pdf';
+import cv from '../assets/MyCV.pdf';
 
 const Navbar = () => {
   const [position, setPosition] = useState('absolute');

@@ -29,7 +29,7 @@ const Projects = () => {
       </header>
 
       <Swiper
-        modules={[Navigation, Pagination]}  // Ensure correct use of modules
+        modules={[Navigation, Pagination]}  
         spaceBetween={20}
         navigation
         pagination={{ clickable: true }}

@@ -1,6 +1,5 @@
 import React from 'react';
 import {FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTimes} from 'react-icons/fa';
-import { TiSocialLinkedinCircular } from "react-icons/ti";
 
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
